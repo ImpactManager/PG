@@ -1,0 +1,119 @@
+{
+    "start_scene": "scene_forest_entrance",
+    "scenes": {
+        "scene_forest_entrance": {
+            "background": "forest_entrance.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви стоїте на краю таємничого лісу. Прохолодний вітер шелестить листям, запрошуючи вас зайти. Що ви робите?",
+            "voice_over": "1.mp3",
+            "choices": [
+                {"text": "Увійти в ліс", "next_scene": "scene_deep_forest"},
+                {"text": "Повернутися назад", "next_scene": "scene_abandon_adventure"}
+            ]
+        },
+        "scene_deep_forest": {
+            "background": "deep_forest.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Казкарь", "position": "left", "image": "char_wizard.png"},
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Поглиблюючись у ліс, ви натрапляєте на стару, звивисту стежку. Здається, нею давно ніхто не ходив. Раптом, ви чуєте дивний шепіт...",
+            "voice_over": "2.mp3",
+            "choices": [
+                {"text": "Йти по стежці", "next_scene": "scene_fork_road"},
+                {"text": "Шукати обхідний шлях", "next_scene": "scene_lost"}
+            ],
+            "auto_advance": false
+        },
+        "scene_fork_road": {
+            "background": "fork_road.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Стежка приводить вас до розвилки. Одна веде праворуч, інша - ліворуч.",
+            "voice_over": "3.mp3",
+            "choices": [
+                {"text": "Піти праворуч", "next_scene": "scene_right_path"},
+                {"text": "Піти ліворуч", "next_scene": "scene_left_path"}
+            ],
+            "auto_advance": false
+        },
+        "scene_right_path": {
+            "background": "clearing.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Вийшовши на галявину, ви бачите сліди давніх руїн.",
+            "voice_over": "4.mp3",
+            "choices": [],
+            "next_scene": "end_scene_good",
+            "auto_advance": true
+        },
+        "scene_left_path": {
+            "background": "river.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви натрапляєте на швидку річку, що перекриває шлях.",
+            "voice_over": "9.mp3",
+            "choices": [],
+            "next_scene": "end_scene_neutral",
+            "auto_advance": true
+        },
+        "scene_abandon_adventure": {
+            "background": "menu_exit.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви вирішуєте, що пригоди не для вас, і повертаєтеся додому.",
+            "voice_over": "5.mp3",
+            "choices": [],
+            "next_scene": "menu_return",
+            "auto_advance": true
+        },
+        "scene_lost": {
+            "background": "dark_forest.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви заблукали в густому лісі, звідусіль чути дивні звуки. ",
+            "voice_over": "6.mp3",
+            "choices": [],
+            "next_scene": "menu_return",
+            "auto_advance": true
+        },
+        "end_scene_good": {
+            "background": "happy_ending.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви знайшли скарб! Ваша пригода успішно завершилась!",
+            "voice_over": "7.mp3",
+            "choices": [],
+            "next_scene": "menu_return",
+            "auto_advance": true
+        },
+        "end_scene_neutral": {
+            "background": "neutral_ending.jpg",
+            "background_music": "forest-jungle-nature-dark-atmo-6154.mp3",
+            "characters": [
+                {"name": "Наратор", "position": "center", "image": null}
+            ],
+            "text": "Ви досягли кінця свого шляху. Це був довгий і складний шлях, але ви впорались.",
+            "voice_over": "8.mp3",
+            "choices": [],
+            "next_scene": "menu_return",
+            "auto_advance": true
+        }
+    }
+}
